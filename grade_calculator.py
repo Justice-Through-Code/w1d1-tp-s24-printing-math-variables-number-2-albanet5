@@ -4,9 +4,9 @@ def calculate_average_grade():
 
     # Prompt the user for their scores in Math, Science, and English
     # Store the scores in the respective variables: math_score, science_score, english_score
-    math_score = int(input("What is your Math score? "))
-    science_score = int(input("What is your Science score? ")) 
-    english_score = int(input("What is your English score? "))
+    math_score = float(input("What is your Math score? "))
+    science_score = float(input("What is your Science score? "))
+    english_score = float(input("What is your English score? "))
 
     # Calculate the average grade
     average_grade = (math_score + science_score + english_score) / 3 
@@ -19,4 +19,4 @@ if __name__ == '__main__':
     student_name, average_grade = calculate_average_grade()
 
     # Print the student's name and their average grade
-    print(f"{student_name}'s average grade is {average_grade}") 
+    print(f"{student_name}'s average grade is: {average_grade:.2f}")
